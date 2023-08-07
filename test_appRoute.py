@@ -1,10 +1,10 @@
 
 # testing app
-import app # import app.py
+import appRoute # import app.py
 
 def test_index():
     # create a test client
-    tester = app.app.test_client()
+    tester = appRoute.app.test_client()
     # use the test client to make a request to '/'
     response = tester.get('/', content_type='html/text')
     # compare the response data to expected result
