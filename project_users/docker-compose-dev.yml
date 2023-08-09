@@ -1,0 +1,33 @@
+version: '3.8'  # Use the appropriate version
+
+services:
+  users:
+    container_name: users
+    build:
+      context: ./services/users
+      dockerfile: Dockerfile-dev
+    volumes:
+      - './services/users:/usr/src/app'
+    ports:
+      - '5001:5000'  # Mapping host port to container port
+    environment:
+      - FLASK_APP=project/__init__.py
+      - FLASK_DEBUG=1
+      # -APP_SETTINGS: project.config.DevelopmentConfig
+      # -DATABASE_URL: postgresql://postgres:postgres@users-db:5432/users_dev
+      # -DATABASE_TEST_URL: postgresql://postgres:postgres@users-db:5432/users_test
+    # depends_on:
+      # - users-db
+    # links:
+      # - users-db
+
+  # users-db:
+  #   container_name: users-db
+  #   build:
+  #     context: H:\devops\python\pythonWeb\project_users/project/db
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - '5432:5432'
+  #   environment:
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_PASSWORD=postgres

@@ -1,10 +1,9 @@
 from flask import Flask, jsonify
 # instantiate the app
 app = Flask(__name__)
-
 # set config
-app.config.from_object('project.config.DevelopmentConfig') # new
-
+app.config.from_object('project.config.DevelopmentConfig')
+# set up extensions
 @app.route('/users/ping', methods=['GET'])
 def ping_pong():
     return jsonify({
