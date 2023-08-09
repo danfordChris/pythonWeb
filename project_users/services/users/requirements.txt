@@ -1,5 +1,6 @@
 flask
 jinja2
 pytest
-Flask-SQLAlchemy 
+Flask-SQLAlchemy
 psycopg2
+Flask-Testing
