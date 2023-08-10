@@ -1,0 +1,8 @@
+.pytest_cache
+services
+trash
+venv
+appRoute.py
+flask-docker.py
+test_appRoute.py
+requitements.txt
