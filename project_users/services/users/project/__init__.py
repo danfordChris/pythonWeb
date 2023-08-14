@@ -1,13 +1,11 @@
 import os
-from flask import Flask, jsonify
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 
 # instantiate the db
 db = SQLAlchemy()
-
-def create_app(script_info=None):
-    
+def create_app(script_info=None):    
     # instantiate the app
     app = Flask(__name__)
     # set config
