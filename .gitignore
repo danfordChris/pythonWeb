@@ -6,3 +6,6 @@ appRoute.py
 flask-docker.py
 test_appRoute.py
 requitements.txt
+node_modules
+package*.json
+project_users/README.md
