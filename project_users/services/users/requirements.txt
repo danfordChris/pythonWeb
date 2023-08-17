@@ -8,4 +8,5 @@ gunicorn
 coverage
 flake8
 flask-debugtoolbar
+flask-cors
 
