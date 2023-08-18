@@ -1,5 +1,4 @@
 .pytest_cache
-services
 trash
 venv
 appRoute.py
