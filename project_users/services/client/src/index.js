@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import axios from 'axios';
+import axios from 'axios'
 import UsersList from './components/UsersList';
 import AddUser from './components/AddUser';
 
@@ -30,7 +30,7 @@ class App extends Component {
       username: this.state.username,
       email: this.state.email
     };
-    axios.post(`http://127.0.0.1:5001/users`, data)
+    axios.post(`${process.env.REACT_APP_USERS_SERVICE_URL}/users`, data)
     .then((res) => {
       this.getUsers();
       this.setState({ username: '', email: '' });
