@@ -9,4 +9,4 @@ coverage
 flake8
 flask-debugtoolbar
 flask-cors
-
+flask-migrate

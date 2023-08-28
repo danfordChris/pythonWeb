@@ -3,6 +3,7 @@ from project.api.models import User
 import json
 import unittest
 from project.tests.base import BaseTestCase
+from project.tests.utils import add_user
 
 def add_user(username,email):
     user = User(username=username,email=email)
