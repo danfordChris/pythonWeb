@@ -1,4 +1,4 @@
-FROM python:3.11.4
+FROM python:3.11.5
 # install environment dependencies
 RUN apt-get update -y \
     && apt-get install -y --no-install-recommends netcat-traditional \
